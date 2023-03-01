@@ -118,4 +118,4 @@ class DinnerPlanner:
         if reserve:
             tkinter.messagebox.showinfo('Success','Your reservation is confirmed for ' + self.radio_var.get())
 
-myDinner = DinnerPlanner()
+myDinner = MyGUI()
