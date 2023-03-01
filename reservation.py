@@ -52,14 +52,14 @@ class MyGUI():
         self.dummyLabel3.pack(side='left')
 
         self.dateLabel = tkinter.Label(self.frame7, text='Reservation Date:')
-        self.radio_var = tkinter.StringVar()
+        self.radio_var = tkinter.IntVar()
 
         self.dateRB1 = tkinter.Radiobutton(
-            self.frame8, text='March 1 2023', variable=self.radio_var, value='3/1/23')
+            self.frame8, text='March 1 2023', variable=self.radio_var, value='3/1/23', command=self.show_choice)
         self.dateRB2 = tkinter.Radiobutton(
-            self.frame8, text='March 2 2023', value='3/2/23')
+            self.frame8, text='March 2 2023', value='3/2/23', command=self.show_choice)
         self.dateRB3 = tkinter.Radiobutton(
-            self.frame8, text='March 3 2023', value='3/3/23')
+            self.frame8, text='March 3 2023', value='3/3/23', command=self.show_choice)
 
         self.dateLabel.pack(side='left', anchor='w')
         self.dateRB1.pack(anchor='e')
